@@ -1,5 +1,5 @@
 
-// 첫번째방법 :  root ID를 만들고 2. 스타일을 지정한다
+// 첫번째방법 : 스타일지정하고 , 한번더 함수로 묶는다.
 let root = document.getElementById('root');
 function rootBox(rootwith, rootHeight, rootpoistion, rootbackgroundcolor) {
 root.style.width = rootwith;
@@ -10,7 +10,7 @@ root.style.backgroundColor =rootbackgroundcolor;
 rootBox("430px", "932px", "absolute", "#1E1E1E");
 
 
-// 세번째방법 :  스타일지정하고 , 한번더 함수로 묶는다.
+// 두번째방법 : 스타일을 지정 각각 해주기. 
 // let root = document.getElementById('root');
 // root.style.width="430px";
 // root.style.height= "932px ";
@@ -26,7 +26,7 @@ root.appendChild(makeDiv);
 
 
 
-// 두번째방법: div의 스타일을 cssText 로 묶어서 한번에 지정한다 .   
+// 세번째방법: div의 스타일을 cssText 로 묶어서 한번에 지정한다 .   
 if(i===0) {  
 makeDiv.style.cssText =
 "width:147px; height:29px; font-size: 24px; position:absolute; left:141px; top:301px "
