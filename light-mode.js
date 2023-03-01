@@ -4,8 +4,8 @@ const makeElement = {
   tagName : ["div", "p", "div"],
   setAttrId : "id",
   setAttrName : ["title", "paragraph", "circle"],
-  parent : root,
-
+  parent: root,
+  
   maker : function(num) {
     const element = document.createElement(this.tagName[num]);
     element.setAttribute(this.setAttrId, this.setAttrName[num]);
